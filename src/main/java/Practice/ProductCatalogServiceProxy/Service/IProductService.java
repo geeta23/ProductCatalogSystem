@@ -1,13 +1,16 @@
 package Practice.ProductCatalogServiceProxy.Service;
 
 import Practice.ProductCatalogServiceProxy.DTO.ProductDto;
+import Practice.ProductCatalogServiceProxy.Models.Product;
+
+import java.util.List;
 
 public interface IProductService {
-    String getProducts();
+    List<Product> getProducts();
 
-    String getProduct(Long productId);
+    Product getProduct(Long productId);
 
-    String createProducts(ProductDto productDto);
+    Product createProducts(ProductDto productDto);
 
     String updateProduct(ProductDto productDto);
 }

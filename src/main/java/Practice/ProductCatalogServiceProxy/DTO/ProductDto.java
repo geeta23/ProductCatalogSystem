@@ -1,6 +1,5 @@
 package Practice.ProductCatalogServiceProxy.DTO;
 
-import Practice.ProductCatalogServiceProxy.Models.Category;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -9,9 +8,11 @@ import lombok.ToString;
 @Setter
 @ToString
 public class ProductDto {
+    private Long id;
     private String title;
     private String description;
-    private String imageUrl;
+    private String image;
     private double price;
-    private Category category;
+    private String category;
+    private RatingDto ratingDto;
 }
