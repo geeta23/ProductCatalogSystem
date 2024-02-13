@@ -10,7 +10,7 @@ public interface IProductService {
 
     Product getProduct(Long productId);
 
-    Product createProducts(ProductDto productDto);
+    Product createProducts(Product fakeStoreProduct);
 
-    String updateProduct(ProductDto productDto);
+    Product updateProduct(Long id, Product product);
 }
