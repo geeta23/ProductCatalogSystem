@@ -10,7 +10,7 @@ public interface IProductService {
 
     Product getProduct(Long productId);
 
-    Product createProducts(Product fakeStoreProduct);
+    Product createProducts(Product product);
 
     Product updateProduct(Long id, Product product);
 }

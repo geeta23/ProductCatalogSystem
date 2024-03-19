@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // tell spring that this the service and we need to autowire with controller
-@Service
+//@Service // I want to product service stub
 public class FakeStoreProductService implements IProductService {
     private FakeStoreApiClient fakeStoreApiClient;
 
